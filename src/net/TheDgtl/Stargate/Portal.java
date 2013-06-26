@@ -573,6 +573,9 @@ public class Portal {
 	}
 
 	public boolean wasVerified() {
+                if(!Stargate.verifyPortals) {
+                    return true;
+                }
 		return verified;
 	}
 

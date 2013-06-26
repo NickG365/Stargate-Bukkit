@@ -12,6 +12,7 @@
 # handleVehicles - Whether to allow vehicles through gates
 # sortLists - Whether to sort network lists alphabetically
 # protectEntrance - Whether to protect gate entrance material (More resource intensive. Only enable if using destroyable open/closed material)
+# verifyPortals - If true, checks will be done to ensure that the portal frame and control blocks still match what is defined in the gate file.  (Set this to false if you want to modify a portal's frame after creating it.)
 # signColor - The color used for drawing signs (Default: BLACK). See: 
 ############################
 # Stargate economy options #
@@ -50,3 +51,4 @@ freegatesgreen: false
 debug: false
 permdebug: false
 enableBungee: false
+verifyPortals: true

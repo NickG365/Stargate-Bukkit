@@ -164,6 +164,7 @@ ignoreEntrance - Set this option to true to not check the entrance of a gate on 
 handleVehicles - Whether or not to handle vehicles going through gates. Set to false to disallow vehicles (Manned or not) going through gates.
 sortLists - If true, network lists will be sorted alphabetically.
 protectEntrance - If true, will protect from users breaking gate entrance blocks (This is more resource intensive than the usual check, and should only be enabled for servers that use solid open/close blocks)
+verifyPortals - If true, checks will be done to ensure that the portal frame and control blocks still match what is defined in the gate file.  (Set this to false if you want to modify a portal's frame after creating it.)
 signColor: This allows you to specify the color of the gate signs. Valid colors:
 
 debug - Whether to show massive debug output
@@ -215,6 +216,8 @@ Bukkit Issue: Stargate will randomly NPE when drawing a sign. Long-standing Bukk
 =============
   Changes
 =============
+[Version 0.7.9.11]
+- Added 'verifyPortals' config option
 [Version 0.7.9.10]
  - Fix personal gate permission check for players with mixed-case names
 [Version 0.7.9.9]

@@ -101,6 +101,7 @@ public class Stargate extends JavaPlugin {
 	public static boolean sortLists = false;
 	public static boolean protectEntrance = false;
 	public static boolean enableBungee = true;
+        public static boolean verifyPortals = true;
 	public static ChatColor signColor;
 	
 	// Temp workaround for snowmen, don't check gate entrance
@@ -207,6 +208,7 @@ public class Stargate extends JavaPlugin {
 		sortLists = newConfig.getBoolean("sortLists");
 		protectEntrance = newConfig.getBoolean("protectEntrance");
 		enableBungee = newConfig.getBoolean("enableBungee");
+                verifyPortals = newConfig.getBoolean("verifyPortals");
 		// Sign color
 		String sc = newConfig.getString("signColor");
 		try {
